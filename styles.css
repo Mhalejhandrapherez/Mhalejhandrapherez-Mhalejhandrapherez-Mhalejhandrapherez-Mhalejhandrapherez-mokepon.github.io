@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+body {
+    
+    font-family: 'Rubik Gemstones', cursive;
+    background-color:#FFDE00;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: rgb(234, 28, 28);
+    font-size: 40px;
+}
+
+.subtitulo {
+    color: rgb(0, 0, 0);
+    font-size: 34px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 20px; 
+}
+
+
+.tarjeta-de-mokepon {
+    width: 253px;
+    height: 200px;
+    background: #FFFAE7;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 20px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 150px;
+}
+
+#boton-mascota {
+    width: 99px;
+    height: 34px;
+    border-radius: 20px;
+    background: #EFEFEF;
+    border: 2px solid white;
+    font-family: 'Rubik Gemstones', cursive;
+    margin-top: 30px;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked + label{
+    background-color: #82CD47;
+
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: aqua;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: cadetblue;
+    width: 166px;
+    font-family: 'Rubik Gemstones', cursive;
+}
+
+#mensajes {
+    width: 224px;
+    background: orange;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: transparent;
+    color: red;
+    font-family: 'Rubik Gemstones', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 99px;
+    height: 34px;
+    border-radius: 20px;
+    background: #EFEFEF;
+    border: 2px solid white;
+    font-family: 'Rubik Gemstones', cursive;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 430px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
