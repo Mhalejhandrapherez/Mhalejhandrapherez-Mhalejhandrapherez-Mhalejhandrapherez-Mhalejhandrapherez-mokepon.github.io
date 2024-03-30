@@ -172,7 +172,7 @@ function  iniciarjuego() {
 }
 
 function unirseAlJuego() {
-    fetch("http://192.168.80.11:8080/unirse")
+    fetch("https://mhalejhandrapherez.github.io/Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-mokepon.github.io/unirse")
     .then(function(res) {
         if (res.ok) {
             res.text()
@@ -216,7 +216,7 @@ function seleccionarMascotaJugador () {
 }
 
 function seleccionarMokepon(mascotaJugador) {
-    fetch(`http://192.168.80.11:8080/mokepon/${jugadorId}`, {
+    fetch(`https://mhalejhandrapherez.github.io/Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-mokepon.github.io/${jugadorId}`, {
         method: "post",
         headers: {
             "Content-Type": "application/json"
@@ -290,7 +290,7 @@ function secuenciaAtaque() {
 }
 
 function enviarAtaques() {
-    fetch(`http://192.168.80.11:8080/mokepon/${jugadorId}/ataques`, {
+    fetch(`https://mhalejhandrapherez.github.io/Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-mokepon.github.io/${jugadorId}/ataques`, {
         method: "post",
         headers: {
             "Content-Type": "application/json"
@@ -305,7 +305,7 @@ function enviarAtaques() {
 
 
 function obtenerAtaques() {
-    fetch(`http://192.168.80.11:8080/mokepon/${enemigoId}/ataques`)
+    fetch(`https://mhalejhandrapherez.github.io/Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-Mhalejhandrapherez-mokepon.github.io/${enemigoId}/ataques`)
     .then(function (res) {
         if (res.ok) {
             res.json()
